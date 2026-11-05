@@ -40,7 +40,7 @@ public class WishlistManager: ObservableObject {
 
     private func loadFromStorage() {
         if let data = UserDefaults.standard.data(forKey: storageKey),
-           let decoded = try? JSONDecoder().decode([SareeProduct].self, data: data) {
+           let decoded = try? JSONDecoder().decode([SareeProduct].self, from: data) {
             self.favorites = decoded
         }
     }

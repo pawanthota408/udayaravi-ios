@@ -83,7 +83,7 @@ public class UserManager: ObservableObject {
         self.isLoggedIn = UserDefaults.standard.bool(forKey: "is_logged_in")
         
         if let userData = UserDefaults.standard.data(forKey: userKey),
-           let user = try? JSONDecoder().decode(UserProfile.self, data: userData) {
+           let user = try? JSONDecoder().decode(UserProfile.self, from: userData) {
             self.currentUser = user
         } else {
             // Default demo account
@@ -100,7 +100,7 @@ public class UserManager: ObservableObject {
         }
 
         if let addrData = UserDefaults.standard.data(forKey: addressesKey),
-           let list = try? JSONDecoder().decode([DeliveryAddress].self, data: addrData),
+           let list = try? JSONDecoder().decode([DeliveryAddress].self, from: addrData),
            !list.isEmpty {
             self.addresses = list
         } else {

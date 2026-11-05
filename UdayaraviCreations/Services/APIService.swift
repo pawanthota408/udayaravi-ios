@@ -39,7 +39,7 @@ public class APIService: ObservableObject {
                 self?.isLoading = false
                 guard let data = data, error == nil else { return }
                 do {
-                    let decoded = try JSONDecoder().decode(OrderResponse.self, data: data)
+                    let decoded = try JSONDecoder().decode(OrderResponse.self, from: data)
                     if let remoteOrders = decoded.data, !remoteOrders.isEmpty {
                         self?.orders = remoteOrders
                     }
@@ -85,7 +85,7 @@ public class APIService: ObservableObject {
                 )
 
                 if let data = data,
-                   let createResp = try? JSONDecoder().decode(CreateOrderResponse.self, data: data),
+                   let createResp = try? JSONDecoder().decode(CreateOrderResponse.self, from: data),
                    createResp.success {
                     let remoteId = createResp.orderId ?? localOrder.id
                     let confirmedOrder = OrderModel(
@@ -177,7 +177,7 @@ public class APIService: ObservableObject {
                 self?.isLoading = false
                 guard let data = data, error == nil else { return }
                 do {
-                    let decoded = try JSONDecoder().decode(ProductResponse.self, data: data)
+                    let decoded = try JSONDecoder().decode(ProductResponse.self, from: data)
                     if let remoteList = decoded.data, !remoteList.isEmpty {
                         self?.products = remoteList
                     }
@@ -203,7 +203,7 @@ public class APIService: ObservableObject {
             DispatchQueue.main.async {
                 guard let data = data, error == nil else { return }
                 do {
-                    let decoded = try JSONDecoder().decode(CategoryResponse.self, data: data)
+                    let decoded = try JSONDecoder().decode(CategoryResponse.self, from: data)
                     if let remoteList = decoded.data, !remoteList.isEmpty {
                         self?.categories = remoteList
                     }

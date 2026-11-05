@@ -121,7 +121,7 @@ public class CartManager: ObservableObject {
 
     private func loadFromStorage() {
         if let data = UserDefaults.standard.data(forKey: storageKey),
-           let decoded = try? JSONDecoder().decode([CartItem].self, data: data) {
+           let decoded = try? JSONDecoder().decode([CartItem].self, from: data) {
             self.items = decoded
         } else {
             // Default sample items to showcase luxury cart functionality
