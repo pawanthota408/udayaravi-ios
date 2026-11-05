@@ -40,6 +40,11 @@ public struct AppTheme {
     )
 }
 
+// MARK: - Global Helper to Dismiss Keyboard
+public func hideKeyboard() {
+    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+}
+
 // MARK: - View Extension for Dismiss Keyboard & Common Modifiers
 extension View {
     public func hideKeyboard() {

@@ -16,24 +16,36 @@ mkdir -p "$PROJECT_DIR/build"
 echo "Listing schemes..."
 xcodebuild -list -project "$PROJECT_DIR/UdayaraviCreations.xcodeproj"
 
-# 1. Compile iOS App for Device
+# 1. Compile iOS App for Device with Ad-Hoc Signing
 echo "[1/2] Compiling iOS App with Xcode..."
+xcodebuild build \
+  -project "$PROJECT_DIR/UdayaraviCreations.xcodeproj" \
+  -scheme "UdayaraviCreations" \
+  -configuration Release \
+  -destination "generic/platform=iOS" \
+  -derivedDataPath "$DERIVED_DATA" \
+  CODE_SIGN_STYLE=Manual \
+  CODE_SIGN_IDENTITY="-" \
+  CODE_SIGNING_REQUIRED=NO \
+  CODE_SIGNING_ALLOWED=YES \
+  AD_HOC_CODE_SIGNING_ALLOWED=YES || \
 xcodebuild build \
   -project "$PROJECT_DIR/UdayaraviCreations.xcodeproj" \
   -scheme "UdayaraviCreations" \
   -configuration Release \
   -sdk iphoneos \
   -derivedDataPath "$DERIVED_DATA" \
-  CODE_SIGNING_ALLOWED=NO \
+  CODE_SIGN_STYLE=Manual \
+  CODE_SIGN_IDENTITY="-" \
   CODE_SIGNING_REQUIRED=NO \
-  CODE_SIGN_IDENTITY="" \
+  CODE_SIGNING_ALLOWED=YES \
   AD_HOC_CODE_SIGNING_ALLOWED=YES
 
 # Find compiled .app
-APP_PATH=$(find "$DERIVED_DATA/Build/Products/Release-iphoneos" -name "UdayaraviCreations.app" -type d | head -n 1)
+APP_PATH=$(find "$DERIVED_DATA/Build/Products" -name "UdayaraviCreations.app" -type d | head -n 1)
 
 if [ -z "$APP_PATH" ]; then
-  # Fallback search across derivedData
+  # Fallback search across entire derivedData
   APP_PATH=$(find "$DERIVED_DATA" -name "UdayaraviCreations.app" -type d | head -n 1)
 fi
 

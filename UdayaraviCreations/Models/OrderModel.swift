@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 // MARK: - Order Item Model
-public struct OrderItem: Identifiable, Codable {
+public struct OrderItem: Identifiable, Codable, Equatable, Hashable {
     public let id: String
     public let productId: String?
     public let title: String
@@ -49,7 +49,7 @@ public struct OrderItem: Identifiable, Codable {
 }
 
 // MARK: - Order Model
-public struct OrderModel: Identifiable, Codable {
+public struct OrderModel: Identifiable, Codable, Equatable, Hashable {
     public let id: String
     public let title: String
     public let date: String
