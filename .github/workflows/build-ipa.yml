@@ -7,7 +7,8 @@ on:
 
 jobs:
   build-ipa:
-    runs-on: macos-latest
+    runs-on: macos-14
+    timeout-minutes: 25
 
     steps:
       - name: Checkout Repository
@@ -15,14 +16,13 @@ jobs:
 
       - name: Build and Package .IPA
         run: |
-          if [ -d "Udayaravi-creation iOS App" ]; then
-            cd "Udayaravi-creation iOS App"
-          fi
           chmod +x build_ipa.sh
           ./build_ipa.sh
 
       - name: Upload Debug .IPA Artifact
         uses: actions/upload-artifact@v4
+        if: success()
         with:
           name: UdayaraviCreations-Debug-IPA
           path: "**/*.ipa"
+          retention-days: 7
