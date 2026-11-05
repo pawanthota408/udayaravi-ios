@@ -1,0 +1,31 @@
+name: Build iOS Debug IPA
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-ipa:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Select Xcode Version
+        run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+      - name: Build and Package .IPA
+        run: |
+          if [ -d "Udayaravi-creation iOS App" ]; then
+            cd "Udayaravi-creation iOS App"
+          fi
+          chmod +x build_ipa.sh
+          ./build_ipa.sh
+
+      - name: Upload Debug .IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: UdayaraviCreations-Debug-IPA
+          path: "**/*.ipa"

@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10000001 /* UdayaraviCreationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000001 /* UdayaraviCreationsApp.swift */; };
+		10000002 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000002 /* OrderModel.swift */; };
+		10000003 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000003 /* APIService.swift */; };
+		10000004 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000004 /* OrdersView.swift */; };
+		10000005 /* OrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000005 /* OrderDetailView.swift */; };
+		10000006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20000006 /* Assets.xcassets */; };
+		10000010 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000010 /* ProductModel.swift */; };
+		10000011 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000011 /* UserModel.swift */; };
+		10000012 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000012 /* CartItem.swift */; };
+		10000013 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000013 /* Theme.swift */; };
+		10000014 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000014 /* CartManager.swift */; };
+		10000015 /* WishlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000015 /* WishlistManager.swift */; };
+		10000016 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000016 /* UserManager.swift */; };
+		10000017 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000017 /* ProductCard.swift */; };
+		10000018 /* BannerCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000018 /* BannerCarouselView.swift */; };
+		10000019 /* CategoryChipBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000019 /* CategoryChipBar.swift */; };
+		10000020 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000020 /* ToastView.swift */; };
+		10000021 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000021 /* CustomNavigationBar.swift */; };
+		10000022 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000022 /* RootTabView.swift */; };
+		10000023 /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000023 /* MainHomeView.swift */; };
+		10000024 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000024 /* CatalogView.swift */; };
+		10000025 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000025 /* ProductDetailView.swift */; };
+		10000026 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000026 /* CartView.swift */; };
+		10000027 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000027 /* CheckoutView.swift */; };
+		10000028 /* OrderSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000028 /* OrderSuccessView.swift */; };
+		10000029 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000029 /* ProfileView.swift */; };
+		10000030 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000030 /* WishlistView.swift */; };
+		10000031 /* AddressesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000031 /* AddressesView.swift */; };
+		10000032 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000032 /* SettingsView.swift */; };
+		10000033 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000033 /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20000000 /* UdayaraviCreations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdayaraviCreations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000001 /* UdayaraviCreationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdayaraviCreationsApp.swift; sourceTree = "<group>"; };
+		20000002 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		20000003 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		20000004 /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		20000005 /* OrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailView.swift; sourceTree = "<group>"; };
+		20000006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20000007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20000010 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		20000011 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		20000012 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		20000013 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		20000014 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		20000015 /* WishlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistManager.swift; sourceTree = "<group>"; };
+		20000016 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		20000017 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		20000018 /* BannerCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCarouselView.swift; sourceTree = "<group>"; };
+		20000019 /* CategoryChipBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryChipBar.swift; sourceTree = "<group>"; };
+		20000020 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		20000021 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		20000022 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		20000023 /* MainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeView.swift; sourceTree = "<group>"; };
+		20000024 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		20000025 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		20000026 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		20000027 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		20000028 /* OrderSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSuccessView.swift; sourceTree = "<group>"; };
+		20000029 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		20000030 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
+		20000031 /* AddressesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesView.swift; sourceTree = "<group>"; };
+		20000032 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		20000033 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40000001 = {
+			isa = PBXGroup;
+			children = (
+				40000002 /* UdayaraviCreations */,
+				40000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40000002 /* UdayaraviCreations */ = {
+			isa = PBXGroup;
+			children = (
+				20000001 /* UdayaraviCreationsApp.swift */,
+				40000007 /* Theme */,
+				40000004 /* Models */,
+				40000005 /* Services */,
+				40000008 /* Managers */,
+				40000009 /* Components */,
+				40000006 /* Views */,
+				20000006 /* Assets.xcassets */,
+				20000007 /* Info.plist */,
+			);
+			path = UdayaraviCreations;
+			sourceTree = "<group>";
+		};
+		40000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20000000 /* UdayaraviCreations.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20000002 /* OrderModel.swift */,
+				20000010 /* ProductModel.swift */,
+				20000011 /* UserModel.swift */,
+				20000012 /* CartItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		40000005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				20000003 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		40000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20000022 /* RootTabView.swift */,
+				20000023 /* MainHomeView.swift */,
+				20000024 /* CatalogView.swift */,
+				20000025 /* ProductDetailView.swift */,
+				20000026 /* CartView.swift */,
+				20000027 /* CheckoutView.swift */,
+				20000028 /* OrderSuccessView.swift */,
+				20000004 /* OrdersView.swift */,
+				20000005 /* OrderDetailView.swift */,
+				20000029 /* ProfileView.swift */,
+				20000030 /* WishlistView.swift */,
+				20000031 /* AddressesView.swift */,
+				20000032 /* SettingsView.swift */,
+				20000033 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		40000007 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				20000013 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		40000008 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				20000014 /* CartManager.swift */,
+				20000015 /* WishlistManager.swift */,
+				20000016 /* UserManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		40000009 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				20000017 /* ProductCard.swift */,
+				20000018 /* BannerCarouselView.swift */,
+				20000019 /* CategoryChipBar.swift */,
+				20000020 /* ToastView.swift */,
+				20000021 /* CustomNavigationBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50000001 /* UdayaraviCreations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60000001 /* Build configuration list for PBXNativeTarget "UdayaraviCreations" */;
+			buildPhases = (
+				30000002 /* Sources */,
+				30000001 /* Frameworks */,
+				30000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UdayaraviCreations;
+			productName = UdayaraviCreations;
+			productReference = 20000000 /* UdayaraviCreations.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					50000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 60000002 /* Build configuration list for PBXProject "UdayaraviCreations" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40000001;
+			productRefGroup = 40000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50000001 /* UdayaraviCreations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000006 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000001 /* UdayaraviCreationsApp.swift in Sources */,
+				10000002 /* OrderModel.swift in Sources */,
+				10000003 /* APIService.swift in Sources */,
+				10000004 /* OrdersView.swift in Sources */,
+				10000005 /* OrderDetailView.swift in Sources */,
+				10000010 /* ProductModel.swift in Sources */,
+				10000011 /* UserModel.swift in Sources */,
+				10000012 /* CartItem.swift in Sources */,
+				10000013 /* Theme.swift in Sources */,
+				10000014 /* CartManager.swift in Sources */,
+				10000015 /* WishlistManager.swift in Sources */,
+				10000016 /* UserManager.swift in Sources */,
+				10000017 /* ProductCard.swift in Sources */,
+				10000018 /* BannerCarouselView.swift in Sources */,
+				10000019 /* CategoryChipBar.swift in Sources */,
+				10000020 /* ToastView.swift in Sources */,
+				10000021 /* CustomNavigationBar.swift in Sources */,
+				10000022 /* RootTabView.swift in Sources */,
+				10000023 /* MainHomeView.swift in Sources */,
+				10000024 /* CatalogView.swift in Sources */,
+				10000025 /* ProductDetailView.swift in Sources */,
+				10000026 /* CartView.swift in Sources */,
+				10000027 /* CheckoutView.swift in Sources */,
+				10000028 /* OrderSuccessView.swift in Sources */,
+				10000029 /* ProfileView.swift in Sources */,
+				10000030 /* WishlistView.swift in Sources */,
+				10000031 /* AddressesView.swift in Sources */,
+				10000032 /* SettingsView.swift in Sources */,
+				10000033 /* LoginView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		80000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		80000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UdayaraviCreations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.udayaravicreations.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = UdayaraviCreations/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.udayaravicreations.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60000001 /* Build configuration list for PBXNativeTarget "UdayaraviCreations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80000003 /* Debug */,
+				80000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60000002 /* Build configuration list for PBXProject "UdayaraviCreations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80000001 /* Debug */,
+				80000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 70000001 /* Project object */;
+}
